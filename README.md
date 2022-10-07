@@ -1,2 +1,2 @@
 # my-portfolio
-My official portfolio that show case my best work.
+My official portfolio that shows case my best work.

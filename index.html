@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/2839451fe0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script>
+      emailjs.init("G5isOjyV6kktd4AQ6");
+    </script>
+  </head>
+  <body>
+    <!-- start pre loader -->
+    <div class="pre-loader">
+      <div class="spinner"></div>
+    </div>
+    <!-- end pre loader -->
+    <!-- start cursor div -->
+    <div class="cursor"></div>
+    <!-- end cursor div -->
+    <!-- start go up button -->
+    <div class="go-up-btn"><i class="fa-solid fa-arrow-up"></i></div>
+    <!-- end go up button -->
+    <!-- start nav bar -->
+    <div class="nav-links-pop-up">
+      <i class="fa-solid fa-xmark"></i>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <nav class="nav-bar">
+      <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.facebook.com/amrmustafa13" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/amrmustafa13/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/AmrMustafa13" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end nav bar -->
+    <!-- start header -->
+    <header id="home" class="main-section">
+      <div class="fancy-text">
+        <h1 class="animate">
+          Hello, I'm <span>Amr</span> <br />
+          Welcome To My World.
+        </h1>
+        <button class="animate">Download Resume</button>
+      </div>
+      <div class="my-pic animate">
+        <img src="./assets/personal.jpg" alt="personal-pic" />
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start about me -->
+    <section class="about-me main-section" id="about">
+      <div class="section-title">
+        <h2 class="animate">About Me</h2>
+        <p class="animate">
+          I'm a Front-End Web Developer with 3+ years of experience in Computer
+          Science.I love applying my technical skills in real-world applications
+          to help people reach high growth in their businesses.
+        </p>
+      </div>
+      <div class="about-me-accordion animate">
+        <div class="side-tabs">
+          <ul>
+            <li id="skills" class="active">Main Skills</li>
+            <li id="experience">Experience</li>
+            <li id="education">Education</li>
+            <li id="interests">Interests</li>
+          </ul>
+        </div>
+        <div class="tabs-content">
+          <div data-tab-name="skills" class="active">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>C#</li>
+              <li>C++</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+          <div data-tab-name="experience">
+            <ul>
+              <li>Front-End Supervisor @CAT Reloaded</li>
+              <li>Team Coordinator @CAT Reloaded</li>
+            </ul>
+          </div>
+          <div data-tab-name="education">CSED Student 3 grade</div>
+          <div data-tab-name="interests">
+            <ul>
+              <li>Football</li>
+              <li>Movies</li>
+              <li>Tv Shows</li>
+              <li>Content Creation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about me -->
+    <!-- start latest projects -->
+    <section class="latest-projects main-section" id="projects">
+      <div class="section-title">
+        <h2 class="animate">My Latest Projects</h2>
+        <p class="animate">
+          Some of my projects that I'm proud of, check out my
+          <a href="https://github.com/AmrMustafa13" target="_blank">GitHub</a>
+          for more.
+        </p>
+      </div>
+      <ul class="gallery-grid">
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+        <li class="project-box animate">
+          <img src="./assets/project1.jpg" alt="project-thumbnail" />
+          <div class="project-overlay">
+            <button>Live Preview</button>
+            <button>GitHub Code</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- end latest projects -->
+    <!-- start contact me -->
+    <section class="contact main-section" id="contact">
+      <div class="section-title">
+        <h2 class="animate">Hire Me</h2>
+        <p class="animate">
+          I'm Available for Freelance Work, Connect with me via phone:
+          +20-1062708063 or email: amrmostafa1311@gmail.com
+        </p>
+      </div>
+      <div class="contact-content">
+        <form class="contact-form animate">
+          <input id="name" placeholder="Your Name" type="text" />
+          <input id="email" placeholder="Your Email" type="text" />
+          <input id="subject" placeholder="Write a Subject" type="text" />
+          <textarea id="message" placeholder="Your Message"></textarea>
+          <button id="send-email-btn">Send Message</button>
+        </form>
+        <div class="map animate">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.4141483381763!2d31.359770920609456!3d31.04256828162064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79dd69777af21%3A0x3b63b73ce38a5ebe!2z2YPZhNmK2Kkg2KfZhNmH2YbYr9iz2Kkg2KzYp9mF2LnYqSDYp9mE2YXZhti12YjYsdip!5e0!3m2!1sar!2seg!4v1664729613181!5m2!1sar!2seg"
+            style="border: 0"
+            width="600"
+            height="600"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- end contact me -->
+    <!-- start footer -->
+    <footer>
+      <ul class="contact-links animate">
+        <li>
+          <a href="https://www.facebook.com/amrmustafa13" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/amrmustafa13/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/AmrMustafa13" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+      <span class="animate">&copy; 2022, All Rights Reserved.</span>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

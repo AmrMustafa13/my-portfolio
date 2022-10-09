@@ -87,6 +87,9 @@ sideTabs.forEach((tab) => {
 // send email via email.js
 
 const sendMailBtn = document.getElementById("send-email-btn");
+const successMessage = document.querySelector(
+  ".contact .contact-content .contact-form span"
+);
 
 sendMailBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -96,9 +99,9 @@ sendMailBtn.addEventListener("click", (e) => {
     from_name: document.getElementById("name").value,
     email_id: document.getElementById("email").value,
   };
-  emailjs
-    .send("service_c1rsb2w", "template_ecs8o0l", params)
-    .then((res) => alert("yess"));
+  emailjs.send("service_c1rsb2w", "template_ecs8o0l", params).then((res) => {
+    if (res.status === 200) successMessage.classList.add("active");
+  });
 });
 
 // animate elements on sroll

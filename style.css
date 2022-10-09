@@ -87,12 +87,9 @@ body {
   border: 2px solid var(--sec-color);
   position: fixed;
   transform: translate(-50%, -50%);
-  /* transition: all 250ms ease-in;
-  transition-property: background transform;
-  transform-origin: 100% 100%; */
-  transition: 0.1s;
+  transition: 50ms;
   pointer-events: none;
-  backdrop-filter: contrast(70%);
+  backdrop-filter: contrast(50%);
   z-index: 1001;
 }
 
@@ -373,6 +370,35 @@ header .fancy-text button {
   background-color: var(--sec-color);
   color: var(--white);
   font-size: 1rem;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  font-weight: bold;
+  transition: transform 250ms ease-in !important;
+}
+
+header .fancy-text button.animate {
+  transition: color 0s ease-in;
+}
+
+header .fancy-text button:hover {
+  color: var(--sec-color);
+  transform: translateY(-2px);
+}
+
+header .fancy-text button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--white);
+  z-index: -1;
+  transition: width 250ms ease;
+}
+
+header .fancy-text button:hover:before {
+  width: 100%;
 }
 
 @media (max-width: 1230px) {
@@ -436,6 +462,11 @@ header .fancy-text button {
   margin-bottom: 20px;
   cursor: pointer;
   position: relative;
+  transition: color 250ms ease-in;
+}
+
+.about-me .about-me-accordion .side-tabs ul li:hover {
+  color: var(--sec-color);
 }
 
 .about-me .about-me-accordion .side-tabs ul li.active {
@@ -637,6 +668,39 @@ header .fancy-text button {
   color: var(--white);
   font-size: 1rem;
   border: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  transition: transform 350ms ease-in !important;
+}
+
+.contact .contact-content .contact-form button:hover {
+  color: var(--sec-color);
+  transform: translateY(-2px);
+}
+
+.contact .contact-content .contact-form button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--white);
+  z-index: -1;
+  transition: width 250ms ease;
+}
+
+.contact .contact-content .contact-form button:hover:before {
+  width: 100%;
+}
+
+.contact .contact-content .contact-form span {
+  display: none;
+  color: #08b208;
+}
+
+.contact .contact-content .contact-form span.active {
+  display: block;
 }
 
 .contact .contact-content .map iframe {

@@ -364,7 +364,6 @@ header .fancy-text span {
 
 header .fancy-text button {
   margin-top: 16px;
-  padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   background-color: var(--sec-color);
@@ -374,6 +373,7 @@ header .fancy-text button {
   border: none;
   overflow: hidden;
   font-weight: bold;
+  padding: 10px;
   transition: transform 250ms ease-in !important;
 }
 
@@ -399,6 +399,12 @@ header .fancy-text button::before {
 
 header .fancy-text button:hover:before {
   width: 100%;
+}
+
+header .fancy-text button a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
 }
 
 @media (max-width: 1230px) {
@@ -486,7 +492,6 @@ header .fancy-text button:hover:before {
 .about-me .about-me-accordion .tabs-content {
   flex: 5;
   position: relative;
-  overflow: hidden;
   color: var(--white);
 }
 
@@ -507,7 +512,31 @@ header .fancy-text button:hover:before {
 }
 
 .about-me .about-me-accordion .tabs-content div ul {
-  list-style: square;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.about-me .about-me-accordion .tabs-content div ul li {
+  font-size: 1.4em;
+}
+
+.about-me .about-me-accordion .tabs-content div ul li span {
+  font-size: 1.6em;
+  opacity: 0.2;
+  margin: 5px;
+}
+
+.about-me .about-me-accordion .tabs-content div ul p {
+  color: var(--grey);
+}
+
+.about-me .about-me-accordion .tabs-content div ul p span {
+  font-size: 1.6em;
+  opacity: 0.1;
+  margin: 5px;
+  color: white;
 }
 
 /* end about me */

@@ -78,21 +78,6 @@ body {
 
 /* end pre loader */
 
-/* start cursor */
-
-.cursor {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  border: 2px solid var(--sec-color);
-  position: fixed;
-  transform: translate(-50%, -50%);
-  transition: 50ms;
-  pointer-events: none;
-  backdrop-filter: contrast(50%);
-  z-index: 1001;
-}
-
 /* start go up button */
 
 .go-up-btn {

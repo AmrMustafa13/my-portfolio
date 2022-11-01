@@ -6,15 +6,6 @@ window.addEventListener("load", (e) => {
   preLoader.classList.add("finished");
 });
 
-// make cursor effect
-
-const myCursor = document.querySelector(".cursor");
-
-window.addEventListener("mousemove", (e) => {
-  myCursor.style.top = e.clientY + "px";
-  myCursor.style.left = e.clientX + "px";
-});
-
 // go up button logic
 
 const goUpBtn = document.querySelector(".go-up-btn");

@@ -88,7 +88,10 @@ sideTabs.forEach((tab) => {
 
 const sendMailBtn = document.getElementById("send-email-btn");
 const successMessage = document.querySelector(
-  ".contact .contact-content .contact-form span"
+  ".contact .contact-content .contact-form span#success"
+);
+const errorMessage = document.querySelector(
+  ".contact .contact-content .contact-form span#error"
 );
 
 sendMailBtn.addEventListener("click", (e) => {
@@ -99,9 +102,21 @@ sendMailBtn.addEventListener("click", (e) => {
     from_name: document.getElementById("name").value,
     email_id: document.getElementById("email").value,
   };
-  emailjs.send("service_c1rsb2w", "template_ecs8o0l", params).then((res) => {
-    if (res.status === 200) successMessage.classList.add("active");
-  });
+  if (
+    params.email_subject === "" ||
+    params.message === "" ||
+    params.from_name === "" ||
+    params.email_id === ""
+  ) {
+    successMessage.classList.remove("active");
+    errorMessage.classList.add("active");
+  } else
+    emailjs.send("service_c1rsb2w", "template_ecs8o0l", params).then((res) => {
+      if (res.status === 200) {
+        successMessage.classList.add("active");
+        errorMessage.classList.remove("active");
+      }
+    });
 });
 
 // animate elements on sroll

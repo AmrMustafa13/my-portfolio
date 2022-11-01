@@ -725,11 +725,16 @@ header .fancy-text button a {
 
 .contact .contact-content .contact-form span {
   display: none;
+}
+
+.contact .contact-content .contact-form span#success.active {
+  display: block;
   color: #08b208;
 }
 
-.contact .contact-content .contact-form span.active {
+.contact .contact-content .contact-form span#error.active {
   display: block;
+  color: var(--sec-color);
 }
 
 .contact .contact-content .map iframe {

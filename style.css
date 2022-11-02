@@ -212,7 +212,6 @@ body {
   text-decoration: none;
   color: inherit;
   transition: all 350ms ease-in;
-  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -236,7 +235,7 @@ body {
   left: 0;
   background-color: var(--sec-color);
   width: 0%;
-  height: 4px;
+  height: 2px;
   transition: width 150ms ease-in;
 }
 
@@ -469,30 +468,21 @@ header .fancy-text button a {
   left: -10px;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 2px;
   background-color: var(--sec-color);
 }
 
 .about-me .about-me-accordion .tabs-content {
   flex: 5;
-  position: relative;
   color: var(--white);
 }
 
 .about-me .about-me-accordion .tabs-content div {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding: 0 2rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 350ms ease-in;
+  display: none;
 }
 
 .about-me .about-me-accordion .tabs-content div.active {
-  opacity: 1;
-  pointer-events: all;
+  display: block;
 }
 
 .about-me .about-me-accordion .tabs-content div ul {
@@ -607,7 +597,7 @@ header .fancy-text button a {
   color: var(--white);
   font-size: 1rem;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid var(--white);
   transition: all 200ms ease-in;
 }
 
